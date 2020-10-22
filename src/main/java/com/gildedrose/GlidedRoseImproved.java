@@ -60,6 +60,8 @@ public class GlidedRoseImproved extends GildedRose {
 
     /**
      * Function that updates the items quality based on its name.
+     * First adjust the quality and then the sellIn since the later
+     * is a condition to adjust the former.
      */	
 	@Override
     public void updateQuality() {
