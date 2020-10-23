@@ -22,7 +22,7 @@ class GlidedRoseImprovedTest {
         app.updateQuality();
         assertEquals(10, app.items[0].sellIn);
     }
-	
+
     /**
      * Once the sell by date has passed, Quality degrades twice as fast.
      */
@@ -32,7 +32,7 @@ class GlidedRoseImprovedTest {
         GlidedRoseImproved app = new GlidedRoseImproved(items);
         app.updateQuality();
         assertEquals(8, app.getItemQuality());
-    }	   
+    }   
 
     /**
      * The Quality of an item is never negative.
@@ -43,7 +43,7 @@ class GlidedRoseImprovedTest {
         GlidedRoseImproved app = new GlidedRoseImproved(items);
         app.updateQuality();
         assertEquals(0, app.getItemQuality());
-    }	
+    }
 
     /**
      * Decrease the quality of a normal item
@@ -65,7 +65,7 @@ class GlidedRoseImprovedTest {
         GlidedRoseImproved app = new GlidedRoseImproved(items);
         app.updateQuality();
         assertEquals(50, app.getItemQuality());
-    }	    
+    }    
 
     /**
      * "Aged Brie" actually increases in Quality the older it gets.
